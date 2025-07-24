@@ -3,7 +3,7 @@ import subprocess
 from datetime import datetime
 
 # Configuration
-REPO_PATH = "/home/sourav/auto-contribution/"  # Replace with your repository path
+REPO_PATH = "/home/sourav/auto-contribution"  # Updated repository path
 FILE_TO_UPDATE = "daily_log.txt"  # File to modify for commit
 BRANCH = "main"  # Replace with your branch name if different
 
@@ -35,3 +35,5 @@ def auto_commit():
 
 if __name__ == "__main__":
     auto_commit()
+
+    #0 23 * * * /home/sourav/auto-contribution/python3 /path/to/auto-contribution >> /path/to/log.txt 2>&1
